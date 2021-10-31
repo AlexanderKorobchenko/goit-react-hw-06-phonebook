@@ -32,3 +32,9 @@
   разработчикой, имя
 - Настройка сайта на Netlify:
   https://drive.google.com/file/d/1cTg_FOfymCJdC5_DLyo1l8-_ePNdBryZ/view
+
+Redux:
+
+- npm i redux
+- npm install react-redux
+- npm i redux-devtools-extension
