@@ -1,21 +1,22 @@
-import actions from './phonebook-types';
+// import actions from './phonebook-types';
+import { createAction } from '@reduxjs/toolkit';
 
-export const addContact = value => ({
-  type: actions.ADD,
-  payload: value,
-});
+// const addContact = value => ({
+//   type: actions.ADD,
+//   payload: value,
+// });
+export const addContact = createAction('contacts/Add');
 
-export const deleteContact = value => ({
-  type: actions.DELETE,
-  payload: value,
-});
+// const deleteContact = value => ({
+//   type: actions.DELETE,
+//   payload: value,
+// });
+export const deleteContact = createAction('contacts/Delete');
 
-export const changeFilter = event => ({
-  type: actions.CHANGE,
-  payload: event.target.value,
-});
+// const changeFilter = event => ({
+//   type: actions.CHANGE,
+//   payload: event.target.value,
+// });
+export const changeFilter = createAction('filter/Change');
 
-export const applyFilter = value => ({
-  type: actions.APPLY,
-  payload: value,
-});
+// export default { addContact, deleteContact, changeFilter };
